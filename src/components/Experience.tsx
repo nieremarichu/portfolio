@@ -2,6 +2,7 @@ import React from "react";
 import workHistory from "../config/ExData";
 import "./style.ex.css";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 function Experience() {
   const transition = {
@@ -23,8 +24,8 @@ function Experience() {
           <section id="cd-timeline" className="cd-container">
             {/*  */}
             {workHistory &&
-              workHistory.map((work) => (
-                <div className="cd-timeline-block">
+              workHistory.map((work, index) => (
+                <div className="cd-timeline-block" key={index}>
                   <div className="cd-timeline-img cd-picture"></div>
                   <motion.div
                     animate={{ opacity: 1, x: 0 }}
@@ -42,11 +43,11 @@ function Experience() {
                                 target="_blank"
                                 rel="noreferrer"
                               >
-                                <img
+                                <Image
                                   src="./images/icons/external-link.svg"
                                   alt="link to live website"
-                                  width="24px"
-                                  height="24px"
+                                  width={24}
+                                  height={24}
                                 />
                               </a>
                             </div>
@@ -62,8 +63,8 @@ function Experience() {
                       </div>
                       <div className="pl-2">
                         {work?.workDes &&
-                          work.workDes.map((x) => (
-                            <h4 className="text-base pt-2">
+                          work.workDes.map((x, index) => (
+                            <h4 className="text-base pt-2" key={index}>
                               {" "}
                               <span className="text-2xl">-</span> {x}{" "}
                             </h4>

@@ -1,9 +1,9 @@
-export const RESUME_PATH = 'https://drive.google.com/file/d/1Ly4bSDny7BOaEezPBxwBlOH--RaBZto_/view?usp=sharing';
+export const RESUME_PATH = 'https://drive.google.com/file/d/1kAWIaYd5Hir02dTvPRI7oKbi3hGrDOmA/view?usp=drive_link';
 export const GITHUB_USERNAME = 'nieremarichu';
 export const LINKEDIN_USERNAME = 'machuy';
 export const FIRST_NAME = 'Marichu';
 export const LAST_NAME = 'Niere';
-export const ADDRESS = 'Poblacion, Cordova, Cebu, Philippines'
+export const ADDRESS = 'Poblacion, Dalaguete, Cebu, Philippines'
 export const PHONE = '+639519837924'
 export const EMAIL_ID = 'chu.niere30@gmail.com';
 export const WHATSAPP_ID = '639519837924';

@@ -10,11 +10,10 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "framer-motion": "^10.18.0",
+    "framer-motion": "^11.1.7",
     "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-rounded-image": "^2.0.15"
+    "react": "^18.2.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",

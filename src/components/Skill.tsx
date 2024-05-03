@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 import { Proficient, Familiar } from "../config/SkillData";
 const Skill = () => {
@@ -23,13 +24,13 @@ const Skill = () => {
                   aria-label={x.skill}
                   key={index}
                 >
-                  <img
+                  <Image
                     src={x.logo}
                     alt=""
                     loading="lazy"
                     className="w-16 mb-1"
-                    width="64px"
-                    height="64px"
+                    width={64}
+                    height={64}
                   />
                   {x.skill}
                 </div>
@@ -47,15 +48,15 @@ const Skill = () => {
                   tabIndex={0}
                   role="img"
                   aria-label={x.skill}
-                  key={index}
+                  key={index + Proficient.length}
                 >
-                  <img
+                  <Image
                     src={x.logo}
                     alt=""
                     loading="lazy"
                     className="w-16 mb-1"
-                    width="64px"
-                    height="64px"
+                    width={64}
+                    height={64}
                   />
                   {x.skill}
                 </div>
